@@ -1,0 +1,23 @@
+*{
+   margin:0px;
+   padding:0px;
+}
+
+
+body{
+   background-color: #ffccaa;
+}
+
+
+
+#mydiv{
+   background-color : #3d39ff;
+   width : 100px;
+   height : 200px;
+}
+
+.myclass{
+   font-family: Arial;
+   color : #ff0000;
+
+}

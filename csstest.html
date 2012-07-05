@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+   <title></title>
+   <LINK REL=StyleSheet HREF="mycss.css" TYPE="text/css" MEDIA=screen>
+
+
+   <script type="text/javascript">
+
+      var mydiv = null;
+
+      function main()
+      {
+         //alert("lkjliju");
+         mydiv = document.createElement('div');
+         mydiv.Id = "id";
+         mydiv.style.backgroundColor = '#ffccaa';
+         mydiv.style.position = 'absolute';
+         mydiv.style.left = '10px';
+         mydiv.style.top = '10px';
+         mydiv.style.height = '15px';
+         mydiv.style.width = '15px';
+         mydiv.onclick = myfunction;
+         
+         var div = document.getElementById("mydiv");
+
+
+         div.appendChild(mydiv);
+
+      }
+
+
+      function myfunction()
+      {
+
+         mydiv.style.backgroundColor = '#00cc00';
+         console.log("hello");
+
+
+      }
+
+   </script>
+</head>
+<body onload="main()">
+   <div id="mydiv">
+
+   </div>
+
+   <a class="myclass" href="http://www.google.ch">Link1</a>
+   <a class="myclass" href="http://www.google.ch">Link2</a>
+   <a  href="http://www.google.ch">Link3</a>
+</body>
+</html>
